@@ -29,6 +29,11 @@
             usuario: 'Alex',
             mensaje: 'Hola mundo'
         });
+
+        // Escuchar (on)
+        socket.on('enviarMensaje', function(mensaje) {
+            console.log('Servdor: ', mensaje);
+        });
     </script>
 
 </body>
